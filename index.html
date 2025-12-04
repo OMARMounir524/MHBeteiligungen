@@ -31,6 +31,13 @@
     </script>
     <style>
       html { scroll-behavior: smooth; }
+      @media (max-width: 640px) {
+        footer .footer-legal {
+          margin-top: 12px !important;
+          display: block;
+          text-align: center;
+        }
+      }
     </style>
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -166,7 +173,7 @@
 
           <p class="text-center">© <span id="year"></span> MH&nbsp;Beteiligungen GmbH</p>
 
-          <div class="flex items-center gap-2 justify-self-end">
+          <div class="flex items-center gap-2 justify-self-end footer-legal">
             <a href="#" class="hover:underline">Impressum</a>
             <span class="text-white/60">•</span>
             <a href="#" class="hover:underline">Datenschutz</a>
