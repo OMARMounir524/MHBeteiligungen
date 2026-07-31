@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Impressum</title>
+    <meta name="description" content="Impressum" />
+
+    <!-- Favicon (same as index) -->
+    <link rel="icon" href="https://res.cloudinary.com/dujghnaly/image/upload/v1764241449/mh_beteiligungen_gmbh_logo_mxvhsh.jpg" type="image/png">
+    <meta name="theme-color" content="#325170">
+
+    <!-- Fonts & Tailwind (same as index) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mh: '#325170',
+              brand: {50:'#eef4f7',100:'#d8e4ea',200:'#b6ccd7',300:'#8faebb',400:'#6d93a3',500:'#4f7a8d',600:'#3f6373',700:'#355463',800:'#2c4653',900:'#253a45'}
+            },
+            boxShadow: { soft: '0 8px 30px rgba(0,0,0,0.08)' },
+            fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] }
+          }
+        }
+      };
+    </script>
+    <style>
+      body { font-family: Inter, ui-sans-serif, system-ui; }
+    </style>
+  </head>
+
+  <body class="antialiased text-slate-800 bg-white min-h-screen flex flex-col">
+    <header class="border-b border-slate-200 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="index.html" class="font-semibold text-slate-900 hover:text-mh">MH&nbsp;Beteiligungen</a>
+        <a href="index.html" class="text-sm text-slate-600 hover:text-mh">Zurück zur Startseite</a>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12 flex-grow">
+        <h1 class="serif text-4xl font-semibold mb-8">Impressum</h1>
+  
+        <div class="space-y-5 text-slate-800 leading-relaxed">
+          <p>
+            <strong>MH Beteiligungen GmbH</strong><br>
+            Theodor-Storm-Straße 4<br>
+            88427 Bad Schussenried
+          </p>
+  
+          <p>
+            <strong>Vertreten durch:</strong><br>
+            Moritz Heller (Geschäftsführer)
+          </p>
+  
+          <p>
+            <strong>Kontakt:</strong><br>
+            Telefon: +49 (0)711 27305692<br>
+            E-Mail:
+            <a href="mailto:moritz.heller@mh-beteiligungen.com" class="text-blue-600 hover:underline">
+              moritz.heller@mh-beteiligungen.com
+            </a>
+          </p>
+  
+          <p>
+            <strong>Registereintrag:</strong><br>
+            Registergericht: Amtsgericht Ulm<br>
+            Registernummer: HRB 740893
+          </p>
+        </div>
+      </main>
+  
+
+    <footer class="border-t border-slate-200 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-sm text-slate-600 flex items-center justify-between">
+        <span>© <span id="year"></span> MH&nbsp;Beteiligungen</span>
+        <div class="flex items-center gap-3">
+          <a class="hover:text-mh" href="impressum.html">Impressum</a>
+          <span class="text-slate-400">•</span>
+          <a class="hover:text-mh" href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
